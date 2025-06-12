@@ -1,0 +1,12 @@
+[
+null,
+{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"Actor1","classId":1,"equips":[1,0,0,2,0],"faceIndex":0,"faceName":"Actor1","traits":[],"initialLevel":30,"maxLevel":99,"name":"アストレア","nickname":"戦士","note":"","profile":"一発の火力が高く、速度もあまり遅くないスタンダードなキャラ。"},
+{"id":2,"battlerName":"Actor2_6","characterIndex":5,"characterName":"Actor2","classId":5,"equips":[31,0,0,2,0],"faceIndex":5,"faceName":"Actor2","traits":[],"initialLevel":30,"maxLevel":99,"name":"レリス","nickname":"踊り子","note":"","profile":"味方へのバフや、回復技によるサポートが得意なキャラ。"},
+{"id":3,"battlerName":"dad,samurai","characterIndex":0,"characterName":"dad","classId":7,"equips":[49,0,0,2,0],"faceIndex":0,"faceName":"dad","traits":[],"initialLevel":30,"maxLevel":99,"name":"カナタ","nickname":"侍","note":"","profile":"素の防御性能が低いが、攻撃性能が高いキャラ。\nなお制作者"},
+{"id":4,"battlerName":"Actor2_3","characterIndex":2,"characterName":"Actor2","classId":8,"equips":[13,0,0,2,0],"faceIndex":2,"faceName":"Actor2","traits":[],"initialLevel":30,"maxLevel":99,"name":"ラインハルト","nickname":"守護者","note":"","profile":"攻撃性能は低いが、防御力が圧倒的に高いタンクキャラ。"},
+{"id":5,"battlerName":"Actor1_5","characterIndex":4,"characterName":"Actor1","classId":2,"equips":[7,0,0,2,0],"faceIndex":4,"faceName":"Actor1","traits":[],"initialLevel":30,"maxLevel":99,"name":"アルベール","nickname":"魔法使い","note":"","profile":"魔法による単体への高火力攻撃が特徴のキャラ。"},
+{"id":6,"battlerName":"Actor1_6","characterIndex":5,"characterName":"Actor1","classId":6,"equips":[37,0,0,2,0],"faceIndex":5,"faceName":"Actor1","traits":[],"initialLevel":30,"maxLevel":99,"name":"ケイシー","nickname":"精霊術師","note":"","profile":"全体攻撃や蘇生技など強力な技が多いが、代償も多いキャラ。"},
+{"id":7,"battlerName":"Actor1_4","characterIndex":3,"characterName":"Actor1","classId":4,"equips":[43,0,0,2,0],"faceIndex":3,"faceName":"Actor1","traits":[],"initialLevel":30,"maxLevel":99,"name":"メイ","nickname":"盗賊","note":"","profile":"デバフ攻撃や、圧倒的な素早さで行動回数が多い扱いやすいキャラ。"},
+{"id":8,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":3,"equips":[25,0,0,2,0],"faceIndex":7,"faceName":"Actor1","traits":[],"initialLevel":30,"maxLevel":99,"name":"ローザ","nickname":"僧侶","note":"","profile":"シンプルな回復魔法や、光魔法が得意なキャラ。"},
+{"id":9,"battlerName":"SF_Actor1_1","characterIndex":0,"characterName":"SF_Actor1","classId":9,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"SF_Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"YOU","nickname":"???","note":"","profile":"なんの武器も使えず、ステータスも最低格。"}
+]

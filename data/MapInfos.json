@@ -1,0 +1,13 @@
+[
+null,
+{"id":1,"expanded":true,"name":"貴様の名前を教えよ","order":1,"parentId":0,"scrollX":3892.7999999999997,"scrollY":2311.2,"quick":false},
+{"id":2,"expanded":true,"name":"フィールドたち","order":2,"parentId":0,"scrollX":3892.7999999999997,"scrollY":2311.2,"quick":false},
+{"id":3,"expanded":true,"name":"準備室","order":3,"parentId":2,"scrollX":3538.909090909091,"scrollY":2101.090909090909,"quick":false},
+{"id":4,"expanded":true,"name":"第１層","order":5,"parentId":2,"scrollX":3892.7999999999997,"scrollY":2488.7999999999997,"quick":false},
+{"id":5,"expanded":false,"name":"第２層","order":6,"parentId":2,"scrollX":3892.7999999999997,"scrollY":2311.2,"quick":false},
+{"id":6,"expanded":false,"name":"第３層","order":7,"parentId":2,"scrollX":3931.2,"scrollY":2388,"quick":false},
+{"id":7,"expanded":false,"name":"第４層","order":8,"parentId":2,"scrollX":3892.7999999999997,"scrollY":2354.4,"quick":false},
+{"id":8,"expanded":false,"name":"ジョブチェンジ","order":4,"parentId":3,"scrollX":3892.7999999999997,"scrollY":2311.2,"quick":false},
+{"id":9,"expanded":false,"name":"第５層","order":9,"parentId":2,"scrollX":3931.2,"scrollY":2488.7999999999997,"quick":false},
+{"id":10,"expanded":false,"name":"第６層","order":10,"parentId":2,"scrollX":3892.7999999999997,"scrollY":2311.2,"quick":false}
+]
