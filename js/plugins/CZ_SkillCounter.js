@@ -1,6 +1,6 @@
 /*:
  * @target MZ
- * @plugindesc 攻撃を受けたときに指定スキルで反撃するプラグイン v1.2（エラー完全解消版） 
+ * @plugindesc 攻撃を受けたときに指定スキルで反撃するプラグイン v1.3（セーブ非破損版） 
  * @author Canata_Zer0 + ChatGPT
  *
  * @help
@@ -9,8 +9,8 @@
  *
  * ■ 機能
  * ・戦闘中のみ
- * ・通常攻撃・スキル受け時OK
  * ・反撃スキル自動即発動
+ * ・セーブデータ破損防止
  */
 
 (() => {
@@ -23,14 +23,20 @@
         const counterSkillId = this.counterSkillId();
         if (counterSkillId) {
             const skillId = Number(counterSkillId);
-            const subject = this._lastSubject; // 攻撃した相手
-            const targetIndex = subject ? subject.index() : 0;
+            const lastSubjectId = this._lastSubjectId;
+            let targetIndex = 0;
+
+            // 直前の攻撃者（アクター or 敵）を取得
+            const subject = this.lastSubject();
+            if (subject) {
+                targetIndex = subject.index();
+            }
 
             console.log(`${this.name()}が反撃スキル${skillId}を発動！（相手：${targetIndex}）`);
 
-            this.forceAction(skillId, targetIndex); // スキル・対象セット
-            BattleManager._actionForcedBattler = this; // 強制行動設定
-            BattleManager.processForcedAction(); // 実行
+            this.forceAction(skillId, targetIndex);
+            BattleManager._actionForcedBattler = this;
+            BattleManager.processForcedAction();
         }
     };
 
@@ -44,9 +50,28 @@
         return null;
     };
 
+    // 攻撃者情報のID記録
     const _Game_Action_apply = Game_Action.prototype.apply;
     Game_Action.prototype.apply = function(target) {
-        target._lastSubject = this.subject(); // 攻撃者記録
+        const subject = this.subject();
+        if (subject.isActor()) {
+            target._lastSubjectId = {type: 'actor', id: subject.actorId()};
+        } else if (subject.isEnemy()) {
+            target._lastSubjectId = {type: 'enemy', id: subject.index()};
+        }
         _Game_Action_apply.call(this, target);
     };
+
+    // IDから直前の攻撃者オブジェクト取得
+    Game_Battler.prototype.lastSubject = function() {
+        const data = this._lastSubjectId;
+        if (!data) return null;
+        if (data.type === 'actor') {
+            return $gameActors.actor(data.id);
+        } else if (data.type === 'enemy') {
+            return $gameTroop.members()[data.id];
+        }
+        return null;
+    };
+
 })();
